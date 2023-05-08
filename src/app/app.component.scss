@@ -1,0 +1,17 @@
+@import "theme";
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $dark;
+    color: $light;
+    width: 100%;
+    min-height: 100%;
+}
+
+#page-content {
+    width: clamp(550px, 50%, 900px);
+    max-width: 90%;
+    padding: 50px 0px 50px 0px;
+}

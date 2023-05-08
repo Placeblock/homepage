@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 15px;
+    transition: transform 0.15s ease-in-out;
+    img {
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+        width: 100%;
+        display: block;
+    }
+    a {
+        text-decoration: none;
+    }
+    &:hover {
+        transform: scale(1.06);
+    }
+}

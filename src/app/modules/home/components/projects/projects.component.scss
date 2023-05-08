@@ -1,0 +1,12 @@
+@import "/src/app/theme";
+
+:host h1 {
+    margin: 20px 0px 20px 0px;
+    color: $primary;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}

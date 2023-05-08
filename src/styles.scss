@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/src/app/theme";
+
+body, html {
+    margin: 0px;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    color: $light;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.char-btn {
+    background-color: $dark;
+    color: $light;
+    border-radius: 100px;
+    border: 1px solid $light;
+    width: 25px;
+    height: 25px;
+    font-weight: 800;
+    &:hover {
+        cursor: pointer;
+    }
+}

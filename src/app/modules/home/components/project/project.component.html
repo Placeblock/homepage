@@ -1,0 +1,14 @@
+<div>
+    <button class="char-btn" (click)="this.infoVisible = !this.infoVisible" *ngIf="this.info != ''">i</button>
+    <a [href]="this.link" target="_blank">
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+    </a>
+</div>
+<div id="project-info-container" *ngIf="this.infoVisible">
+    <div id="project-info">
+        <button class="char-btn" (click)="this.infoVisible = !this.infoVisible">X</button>
+        <h2>{{this.name}}</h2>
+        {{this.info}}
+    </div>
+</div>

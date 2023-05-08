@@ -1,0 +1,66 @@
+<h1>Projects</h1>
+<div id="projects-container">
+    <app-project 
+        [name]="'UNU!'" 
+        [description]="'Have you ever wanted to play UNU online with your friends? Now you can!'" 
+        [link]="'https://unu.codelix.de'"
+        [info]="'Here my goal was to create something, that not only I could benefit from, but others too. This was my first time \
+                 using WebSockets really extensive and it helped me a lot to understand what was going on under the hood! \
+                 I even had to implement timeout ping-pong myself and it works great :). The backend was developed with NodeJS and \
+                 for the frontend I used Angular, as in most of my projects. You can create rooms, share room-links with others and \
+                 play with them! It was my first project others used without me just because they liked it, which was a milestone \
+                 in my journey!'">
+    </app-project>
+    <app-project 
+        [name]="'Project Solis'" 
+        [description]="'With students of a seminar in the school we sent a stratosphere balloon into the sky.'" 
+        [link]="'https://stratosphaere.codelix.de'"
+        [info]="'With students of a seminar in the school we are going to send a stratosphere balloon into the sky. \
+                 Many things have to be planned before the balloon can be launched. With the help of my father Dyterul and I \
+                 were able to build the electronics that are hopefully flying up into the sky and are going to measure data from various \
+                 sensors, for example pressure, humidity, temperature and more! The microcontroller was developed in C++ and \
+                 with the LoraWAN technology we are able to receive live-data from our balloon every minute! For this we had \
+                 to create a really efficient bitmask as we are very limited in how much data we can send to the earth. \
+                 The data get\'s processed by the server and published to the clients to show them in realtime!'">
+    </app-project>
+    <app-project 
+        [name]="'Impulse'" 
+        [description]="'A simple yet good simulation for elastic impulses. It even works with multiple objects!'" 
+        [link]="'https://physics.codelix.de'"
+        [info]="'Last year we learned about the impulse of objects in our physics class. Shout out to our teacher, he does a really great job! \
+                 As I went home I thought about writing a simple simulation and I immediately started developing. However as always, things \
+                 didn\' work as intended. Simulating very fast moving objects was a problem, as sometimes an object jumped over another in \
+                 one calculation step. The solution: calculating more steps. The solution was to calculate the position and velocity of objects \
+                 not per frame, but based on the velocity of the fastest moving object! There are still some problems if the objects are moving \
+                 too fast but they are much less. You can add multiple objects, adjust the velocity, mass and start position. You can change the \
+                 speed of the whole simulation, enable walls and display the impulse, the velocity as well as kinetic energy! Have fun!'">
+    </app-project>
+    <app-project 
+        [name]="'Secretcache'" 
+        [description]="'(Mockup) Finding places to feel free can be hard. Secretcache makes it fun!'" 
+        [link]="'https://secretcache.codelix.de'"
+        [info]="'For a presentation in school my sister asked me two days before submission date if I could create a website for her.\
+                 Of course I didn\'t say no and this is the result of it ;)'">
+    </app-project>
+    <app-project 
+        [name]="'Vocalearn'" 
+        [description]="'(Not finished) Have you ever asked how to learn vocabulary? Try Vocalearn!'" 
+        [link]="'https://vocalearn.codelix.de'"
+        [info]="'A few years ago I started to develop a website for learning vocabulary. Version one of Vocalearn was developed \
+                 with PHP. It worked great, howevery it wasn\'t really extensible. Because of this I started to develop version two \
+                 with much more experience and NodeJS as the backend and React for the frontend. Because of my lack of experience with \
+                 React the project again started to look like a mess and I wasn\'t satisfied with it anyway. This is when version three, \
+                 the current version started to evolve. Many cool features are planned for the third version, but at the moment I \
+                 just don\'t have enough time to work on it.'">
+    </app-project>    
+    <app-project 
+        [name]="'Selling System'" 
+        [description]="'Onetime-Project for calculating prices based on offer and demand. Used for open day in school.'" 
+        [link]="'https://wirtschaft.codelix.de'"
+        [info]="'One day my economics teacher came up with the idea of selling beverages at open day in school and the prices \
+                 should have been calculated based on offer and demand. For this she gave Dyterul and me an strange looking \
+                 exel table from years ago. We didn\'t need much time to realize that this exel table won\'t help us much. \
+                 Then we started to implement our own version, but with a server and webclient. This allowed the visitors to \
+                 get information about current prices in realtime!'">
+    </app-project>
+</div>

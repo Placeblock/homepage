@@ -1,0 +1,7 @@
+<div id="links-container">
+    <a [routerLink]="'home/story'" (click)="this.collapsed = !this.collapsed">Story</a>
+    <a [routerLink]="'home/projects'" (click)="this.collapsed = !this.collapsed">Projects</a>
+    <a [routerLink]="'spotify'" (click)="this.collapsed = !this.collapsed">Spotify</a>
+    <a [routerLink]="'blog'" (click)="this.collapsed = !this.collapsed">Blog</a>
+</div>
+<button id="collapse-btn" (click)="this.collapsed = !this.collapsed">\/</button>

@@ -1,0 +1,13 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-playlist',
+  templateUrl: './playlist.component.html',
+  styleUrls: ['./playlist.component.scss']
+})
+export class PlaylistComponent {
+  @Input() name = "";
+  @Input() description = "";
+  @Input() url = "";
+  @Input() img = "";
+}

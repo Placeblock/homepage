@@ -1,0 +1,73 @@
+@import "/src/app/theme";
+
+:host {
+    position: fixed;
+    font-size: 20px;
+    width: 100%;
+    z-index: 5;
+    #links-container {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        display: flex;
+        background-color: $dark;
+        box-shadow: 0px 0px 5px black;
+        border-top-left-radius: 10px;
+        flex-direction: column;
+        padding: 30px;
+        padding-right: 100px;
+        gap: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+    #collapse-btn {
+        position: fixed;
+        box-shadow: 0px 0px 10px $primary;
+        background-color: $dark;
+        color: $primary;
+        border-radius: 10px;
+        border: none;
+        right: 15px;
+        bottom: 15px;
+        padding: 15px;
+        font-weight: 800;
+        transition: transform 0.3s ease-in-out;
+    }
+    &.collapsed {
+        #collapse-btn {
+            transform: rotate(180deg);
+        }
+        #links-container {
+            transform: translateY(100%);
+        }
+    }
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: $primary;
+        text-decoration-thickness: 3px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        #collapse-btn {
+            display: none;
+        }
+        #links-container {
+            right: auto;
+            bottom: auto;
+            flex-direction: row;
+            padding-inline: 30px;
+            padding-block: 15px;
+        }
+        &.collapsed {
+            #links-container {
+                transform: none;
+            }
+        }
+    }
+}
